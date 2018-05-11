@@ -17,17 +17,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button rollbutton;
         rollbutton = (Button) findViewById(R.id.rollButton);
-       final  ImageView leftImageView;
-        leftImageView = (ImageView)findViewById(R.id.imageView_left);
-       final  ImageView rightImageView;
-        rightImageView = (ImageView)findViewById(R.id.imageView_right);
-       final  int[] diceArray = {R.drawable.dice1,
-                           R.drawable.dice2,
-                           R.drawable.dice3,
-                          R.drawable.dice4,
-                          R.drawable.dice5,
-                          R.drawable.dice6
-                          };
+        final  ImageView leftImageView;
+        leftImageView = (ImageView)findViewById(R.id.image_leftDice);
+        final  ImageView rightImageView;
+        rightImageView = (ImageView)findViewById(R.id.image_rightDice);
+        final  int[] diceArray = {R.drawable.dice1,
+                R.drawable.dice2,
+                R.drawable.dice3,
+                R.drawable.dice4,
+                R.drawable.dice5,
+                R.drawable.dice6
+        };
 
         rollbutton.setOnClickListener(new View.OnClickListener() {
             @Override
